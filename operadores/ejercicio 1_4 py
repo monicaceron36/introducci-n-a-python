@@ -1,0 +1,25 @@
+# Escriba un programa que capture del usuario dos valores a y b en dos inputs sucesivos. Pida al usuario desde la función input que los valores a ingresar deben contener al menos un número decimal. Al ejecutar, el programa debe realizar la multiplicación entre los dos valores y entregar la respuesta en un formatted string que contenga una variable llamada resultado y el texto de su preferencia.
+
+# Pedir los valores
+a = input("Ingrese el primer valor :")
+
+b= input("Ingrese el segundo valor:")
+
+
+# Validar que ambos tengan un punto decimal
+if "." not in a or "." not in b:
+    print(" Error: Ambos valores deben contener un número decimal")
+else:
+    # Convertir a float
+    a = float(a)
+    b = float(b)
+
+    # Multiplicar
+    resultado = a * b
+
+    # Mostrar con formatted string
+    print(f" El resultado de la multiplicación es: {resultado}")
+
+
+
+            
